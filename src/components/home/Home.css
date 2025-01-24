@@ -1,0 +1,65 @@
+
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    background-color: #cecece;
+    padding: 3px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.6s, color 0.3s;
+    font-family: 'Genera SemiBold';
+  }
+  
+  .toggle-button.toggle {
+    background-color: #1e0055;
+    color: #fff;
+  }
+  
+  .toggle-button:not(.toggle) {
+    color: #1e0055;
+  }
+
+  .category {
+    
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(146, 146, 146);
+  }
+
+  .custom-cursor {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(48, 48, 48); 
+    border-radius: 50%; /* Make it circular */
+    pointer-events: none; /* Prevent the custom cursor from interfering with clicks */
+    z-index: 9999; /* Ensure it appears above other elements */
+    transform: translate(-50%, -50%); /* Center the cursor at the mouse position */
+    transition: transform 0.1s ease-out; /* Optional: smooth transition effect */
+  }
+  
+  @import url(https://db.onlinewebfonts.com/c/71ac940a089dbc8bc7de49f612ff041c?family=Genera+SemiBold);
+
+  @font-face {
+    font-family: "Genera SemiBold";
+    src: url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.eot");
+    src: url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/71ac940a089dbc8bc7de49f612ff041c.svg#Genera SemiBold")format("svg");
+}
+
